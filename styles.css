@@ -1,0 +1,126 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--very-light-gray);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+p {
+    max-width: 210px;
+    color: var(--transparent-white);
+    text-align: left;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+figure {
+    margin: 0;
+    padding-top: 25px;
+}
+
+figcaption {
+    text-transform: uppercase;
+    color: var(--transparent-white);
+    padding-top: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color: var(--transparent-white);
+    cursor: pointer;
+    border-style: solid;
+    border-color: transparent;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-card,
+.second-card,
+.third-card {
+    max-width: 350px;
+    padding: 20px 50px 40px 30px;
+}
+
+.first-card {
+    background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.second-card {
+    background-color: var(--dark-cyan);
+}
+
+.third-card {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 799px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .first-card {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .third-card {
+        border-radius: 0 0 10px 10px;
+    }
+
+    p {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.first-card button {
+    color: var(--bright-orange);
+}
+
+.second-card button {
+    color: var(--dark-cyan)
+}
+
+.third-card button {
+    color: var(--very-dark-cyan)
+}
+
+.first-card button:hover,
+.second-card button:hover,
+.third-card button:hover {
+    border-style: solid;
+    border-color: var(--transparent-white);
+    color: var(--transparent-white);
+}
+
+.first-card button:hover {
+    background-color: var(--bright-orange);
+}
+
+.second-card button:hover {
+    background-color: var(--dark-cyan);
+}
+
+.third-card button:hover {
+    background-color: var(--very-dark-cyan);
+}
