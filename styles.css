@@ -32,7 +32,7 @@ figure {
 
 figcaption {
     text-transform: uppercase;
-    color: var(--transparent-white);
+    color: white;
     padding-top: 15px;
     font-family: 'Big Shoulders Display', cursive;
     font-size: 40px;
@@ -41,7 +41,6 @@ figcaption {
 button {
     border-radius: 20px;
     padding: 10px 30px;
-    background-color: var(--transparent-white);
     cursor: pointer;
     border-style: solid;
     border-color: transparent;
